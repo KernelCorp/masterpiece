@@ -1,0 +1,149 @@
+<!-- HEADER HOME ############################################### -->
+<%= render 'refinery/header'%>
+<!-- END HEADER HOME ############################################### -->
+<!-- NAVIGATION ############################################### -->
+<div class='nav-container' style="height: auto;">
+  <nav style="top: 0px;">
+    <div id="logo">
+      <a href="#">
+	     <img src="/assets/logo_small.png" alt="Kerweb">
+      </a>
+      <ul>
+        <li>
+          <a href="#home"><%=t 'home.title' %></a>
+        </li>
+        <li>
+          <a href="#whatwedo"><%=t 'what_we_do.title' %></a>
+        </li>
+        <li>
+          <a href="#contact"><%=t 'contacts.title' %></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<!-- END NAVIGATION ############################################### -->
+<!-- WHAT WE DO SECTION ############################################### -->
+<section id='contact'>
+    <div class="row">
+        <div class="twelve columns centered">
+          <h2>
+            <%=t 'what_we_do.title'%>
+            <i class="title_line"></i>
+          </h2>
+        </div>
+    </div>
+    <div class="row">
+        <ul id="og-grid" class="og-grid">
+        <% @projects.each do |project| %>
+          <% render 'projects/miniproject', :project => project %>
+        <% end %>
+        </ul>
+    </div>
+</section>
+<!-- END WHAT WE DO SECTION ############################################### -->
+<!-- CONTACT SECTION ############################################### -->
+<section id="contact">
+    <div class="row">
+        <div class="twelve columns centered">
+            <h2>
+                <%=t 'contacts.title' %>
+                <i class="title_line"></i>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row">
+    <div class="eleven columns centered">
+      <p class="subtittle">
+        <%=t 'contacts.greeting_clients.html' %>
+      </p>
+    </div>
+    </div>
+    <div class="row">
+        <div class="seven columns">
+            <form action="/formPost" method="post" name="offerForm" enctyoe="multipart/form-data">
+                <input name="offer[name]" placeholder="<%=t('placeholder.first_name')%>" required="" type="text">
+                <input name="offer[email]" placeholder="<%=t('placeholder.email')%>" required="" type="email">
+                <textarea cols="1" name="offer[body]" placeholder="<%=t('placeholder.textarea')%>" required="" rows="5">
+                    <%=:preserve %>
+                </textarea>
+                <button  name="send" type="submit">
+                    <%=t 'placeholder.submit' %>
+                </button>
+            </form>
+        </div>
+        <div class="five columns info">
+            <h4>
+                <%=t 'contacts.where_can_find' %>
+            </h4>
+            <br/>
+            <%=t 'contacts.contact_us' %>
+            <br/>
+            <p>
+                e-mail:
+                <a href="mail">hello[at]kerweb.ru</a>
+            </p>
+            <p>
+                skype:
+                <a href="skype:maxmaxmax697?chat">maxmaxmax697</a>
+            </p>
+        </div>
+    </div>
+</section>
+<!-- END CONTACT SECTION ############################################### -->
+<!-- TWITTER MODULE ############################################### -->
+<!--
+<section id="twitter_module">
+    <div class="row">
+        <div class="twelve columns">
+            <div id="ticker" class="query">
+                <ul class="tweet_list">
+                    <li class="tweet_even">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!-- END TWITTER MODULE ############################################### -->
+<!-- SOCIAL MODULE ############################################### -->
+<section id="social_module">
+    <div class="row">
+        <div class="twelve columns">
+            <ul>
+                <li>
+                    <a href="#" target="_blank">
+                        <i class="icon">F</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/kernelweb" target="_blank">
+                        <i class="icon">L</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- END SOCIAL MODULE ############################################### -->
+<% if @notice %>
+    <div class="modal">
+        <p>
+            <%= @notice %>
+        </p>
+    </div>
+<% end %>
+<!-- FOOTER ############################################### -->
+<%= render 'refinery/footer' %>
+<!-- END FOOTER ############################################### -->
+<!-- JAVASCRIPTS ############################################### -->
+<script src="/assets/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/assets/jquery.scrollto.js" type="text/javascript"></script>
+<script src="/assets/waypoints.min.js" type="text/javascript"></script>
+<script src="/assets/jquery.tweet.js" type="text/javascript"></script>
+<script src="/assets/scripts.js" type="text/javascript"></script>
+<script src="/assets/grid.js" type="text/javascript"></script>
+<!-- END JAVASCRIPTS ############################################### -->

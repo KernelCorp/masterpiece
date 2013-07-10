@@ -1,0 +1,131 @@
+/ HEADER HOME ###############################################
+%section#home
+	.row
+		.twelve.columns
+			%h1.fade-it
+				%img{:alt => "Kerweb", :src => "/assets/logo_header.png"}
+			.fade-it
+				.roles
+					%div
+						We are the Killers
+					%div
+						We are the Bandits
+					%div
+						We are the Bad Guys
+					%div
+						We are the Raiders
+					%div
+						We are what you need
+		/ LITTLE LOGO SEE WHAT WE DO
+		#down_button.fade-it
+			%a{:href => "#whatwedo"}
+		/ END LITTLE LOGO SEE WHAT WE DO
+/ END HEADER HOME ###############################################
+/ NAVIGATION ###############################################
+.nav-container{:style => "height: auto;"}
+	%nav{:style => "top: 0px;"}
+		#logo
+			%a{:href => "#"}
+				%img{:alt => "Kerweb", :src => "/assets/logo_small.png"}
+		%ul
+			%li
+				%a{:href => "#home"}
+					=t 'home.title'
+			%li
+				%a{:href => "#whatwedo"}
+					=t 'what_we_do.title'
+			%li
+				%a{:href => "#contact"}
+					=t 'contacts.title'
+/ END NAVIGATION ###############################################
+/ WHAT WE DO SECTION ###############################################
+%section#whatwedo
+	.row
+		.twelve.columns.centered
+			%h2
+				= t 'what_we_do.title'
+				%i.title_line
+	.row
+		/ WORKS GRID
+		%ul#og-grid.og-grid
+			- @projects.each do |project|
+				= render 'projects/miniproject', :project => project
+		/ END WORKS GRID
+/ END WHAT WE DO SECTION ###############################################
+/ CONTACT SECTION ###############################################
+%section#contact
+	.row
+		.twelve.columns.centered
+			%h2
+				=t 'contacts.title'
+				%i.title_line
+	.row
+		.eleven.columns.centered
+			%p.subtittle
+				=t 'contacts.greeting_clients.html'
+	.row
+		.seven.columns
+			%form{:action => "/formPost", :method => "post", :name => "offerForm", :enctyoe => "multipart/form-data"}
+				%input{:name => "offer[name]", :placeholder => t('placeholder.first_name'), :required => "", :type => "text"}/
+				%input{:name => "offer[email]", :placeholder => t('placeholder.email'), :required => "", :type => "email"}/
+				%textarea{:cols => "1", :name => "offer[body]", :placeholder => t('placeholder.textarea'), :required => "", :rows => "5"}
+					:preserve
+				%button.submit{:name => "send", :type => "submit"}
+					=t 'placeholder.submit'
+		.five.columns.info
+			%h4
+				=t 'contacts.where_can_find'
+			%br/
+			=t 'contacts.address.html'
+			%h4
+				=t 'contacts.contact_us'
+			%br/
+
+			%p
+				e-mail:
+				%a{:href => "mail"}
+					hello[at]kerweb.ru
+			%p
+				skype:
+				%a{:href => "skype:maxmaxmax697?chat"} maxmaxmax697
+
+/ END CONTACT SECTION ###############################################
+/ TWITTER MODULE ###############################################
+/%section#twitter_module
+/	.row
+/		.twelve.columns
+/			#ticker.query
+/				%ul.tweet_list
+/					%li.tweet_even
+/ END TWITTER MODULE ###############################################
+/ SOCIAL MODULE ###############################################
+%section#social_module
+	.row
+		.twelve.columns
+			%ul
+				%li
+					%a{:href => "#", :target => "_blank"}
+						%i.icon
+							F
+				%li
+					%a{:href => "https://twitter.com/kernelweb", :target => "_blank"}
+						%i.icon
+							L
+/ END SOCIAL MODULE ###############################################
+- if @notice
+	%div.modal
+		%p= @notice
+/ FOOTER ###############################################
+%footer
+	.row
+		.twelve.columns
+			%img{:alt => "YOURLOGO", :src => "/assets/logo_footer.png"}/
+/ END FOOTER ###############################################
+/ JAVASCRIPTS ###############################################
+%script{:src => "/assets/jquery-1.9.1.min.js", :type => "text/javascript"}
+%script{:src => "/assets/jquery.scrollto.js"}
+%script{:src => "/assets/waypoints.min.js", :type => "text/javascript"}
+%script{:src => "/assets/jquery.tweet.js", :type => "text/javascript"}
+%script{:src => "/assets/scripts.js", :type => "text/javascript"}
+%script{:src => "/assets/grid.js"}
+/ END JAVASCRIPTS ###############################################

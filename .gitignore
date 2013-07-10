@@ -93,3 +93,10 @@ capybara-*html
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
 
+#Antivim
+.swp
+.orig
+
+#Garbage
+.lock
+schema.rb

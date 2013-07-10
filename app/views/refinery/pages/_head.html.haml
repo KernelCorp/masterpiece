@@ -1,0 +1,32 @@
+%head
+  %title #{@title}
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+  %meta{:charset => "utf-8"}
+  %meta{:content => "description", :name => "description"}
+  %meta{:content => "Kerweb Web Studio", :name => "author"}
+  %meta{:content => "Kerweb, Studio", :name => "keywords"}
+  / Facebook Metadata /
+  %meta{:content => "", :property => "fb:page_id"}
+  %meta{:content => "", :property => "og:image"}
+  %meta{:content => "", :property => "og:description"}
+  %meta{:content => "", :property => "og:title"}
+  / Google+ Metadata /
+  %meta{:content => "", :itemprop => "name"}
+  %meta{:content => "", :itemprop => "description"}
+  %meta{:content => "", :itemprop => "image"}
+  %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1", :name => "viewport"}
+  / Stylesheet /
+  = stylesheet_link_tag 'bootstrap.min'
+  = stylesheet_link_tag 'bootstrap-responsive.min.css'
+  = stylesheet_link_tag 'kerweb'
+  = stylesheet_link_tag 'prettyPhoto'
+  = stylesheet_link_tag 'gumby'
+  = stylesheet_link_tag 'media'
+  = stylesheet_link_tag 'style'
+  = stylesheet_link_tag 'stylesOnHtml'
+  = javascript_include_tag 'modernizr.custom.js'
+  = javascript_include_tag 'jquery.min'
+  = javascript_include_tag 'bootstrap.min'
+  = javascript_include_tag 'kerweb'
+  = javascript_include_tag 'jaslide'
+  = javascript_include_tag 'jquery.prettyPhoto'
