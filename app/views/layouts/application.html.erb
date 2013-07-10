@@ -31,15 +31,15 @@
 			 <div class="row">
 				  <div class="twelve columns centered">
 					 <h2>
-						<%=t 'what_we_do.title'%>
-						<i class="title_line"></i>
+						<!--<%=t 'what_we_do.title'%> -->
+						<!--<i class="title_line"></i> -->
 					 </h2>
 				  </div>
 			 </div>
 			 <div class="row">
 				  <ul id="og-grid" class="og-grid">
 				  <% @projects.each do |project| %>
-					 <% render :partial => '/refinery/projects/miniproject', :locals => {:project => project} %>
+					 <%= render '/refinery/projects/miniproject', :project => project %>
 				  <% end %>
 				  </ul>
 			 </div>
