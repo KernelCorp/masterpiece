@@ -23,7 +23,7 @@ module Refinery
     #
     def show
       if current_user_can_view_page?
-        @projects = Projects::Project.all
+        @projects = Project.all
         if should_skip_to_first_child?
           redirect_to refinery.url_for(first_live_child.url)
         elsif page.link_url.present?
