@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails', '~> 2.0.0'
 gem 'refinerycms', '~> 2.0.0'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -37,3 +38,5 @@ gem 'refinerycms', '~> 2.0.0'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'refinerycms-projects', :path => 'vendor/extensions'
