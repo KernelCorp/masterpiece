@@ -1,3 +1,20 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: f2b273a62b4ef4430de2ce420df54bd269609561
+  specs:
+    paperclip (3.4.2)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
+
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-projects (1.0)
+      refinerycms-core (~> 2.0.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,7 +51,12 @@ GEM
       activerecord (>= 3.0.0)
     babosa (0.3.10)
     bcrypt-ruby (3.0.1)
+    bcrypt-ruby (3.0.1-x86-mingw32)
     builder (3.0.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -72,6 +94,7 @@ GEM
     mime-types (1.23)
     multi_json (1.7.7)
     mysql2 (0.3.11)
+    mysql2 (0.3.11-x86-mingw32)
     orm_adapter (0.0.7)
     paper_trail (2.7.2)
       activerecord (~> 3.0)
@@ -173,13 +196,17 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  i18n
   jquery-rails (~> 2.0.0)
   mysql2
+  paperclip!
   rails (= 3.2.13)
   refinerycms (~> 2.0.0)
+  refinerycms-projects!
   sass-rails (~> 3.2.3)
   therubyracer
   uglifier (>= 1.0.3)

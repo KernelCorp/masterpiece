@@ -1,4 +1,4 @@
 <li>
-	<a data-description=project.body data-largesrc=project.picture.url(:fit) data-title=project.name href=project.href></a>
-		<img src=project.pictureMini.url(:mini) alt=project.name>
+	<a data-description= <%= project.description %> data-largesrc=<%= project.photo.thumbnail("600x6000").url%> data-title= <%= project.title%> ></a>
+		<img src= <%= project.photo.thumbnail("600x6000").url%> alt= <%= project.title%> >
 </li>
