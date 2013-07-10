@@ -38,9 +38,9 @@
 			 </div>
 			 <div class="row">
 				  <ul id="og-grid" class="og-grid">
-				  <% #@projects.each do |project| %>
-					 <% #render 'projects/miniproject', :project => project %>
-				  <% #end %>
+				  <% @projects.each do |project| %>
+					 <% render :partial => '/refinery/projects/miniproject', :project => project %>
+				  <% end %>
 				  </ul>
 			 </div>
 		</section>
