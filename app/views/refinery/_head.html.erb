@@ -1,18 +1,15 @@
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"></meta>
   <meta charset="utf-8"></meta>
-  <meta content="description",name="description"></meta>
-  <meta content="Kerweb Web Studio",name="author"></meta>
-  <meta content="Kerweb, Studio",name="keywords"></meta>
   <!-- Facebook Metadata -->
-  <meta content="",property="fb:page_id"></meta>
-  <meta content="",property="og:image"></meta>
-  <meta content="",property="og:description"></meta>
-  <meta content="",property="og:title"></meta>
+  <meta content="" property="fb:page_id"></meta>
+  <meta content="" property="og:image"></meta>
+  <meta content="" property="og:description"></meta>
+  <meta content="" property="og:title"></meta>
   <!-- Google+ Metadata -->
-  <meta content="",itemprop="name"></meta>
-  <meta content="",itemprop="description"></meta>
-  <meta content="",itemprop="image"></meta>
+  <meta content="" itemprop="name"></meta>
+  <meta content="" itemprop="description"></meta>
+  <meta content="" itemprop="image"></meta>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1",name="viewport"></meta>
   <!-- Stylesheet -->
   <%= stylesheet_link_tag 'bootstrap.min'%>
@@ -36,12 +33,7 @@
   <%= raw %(<link rel="canonical" content="#{@canonical}" />) if @canonical.present? -%>
   <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
   <%= yield :meta %>
-
-  <%= stylesheet_link_tag "application", "formatting", "theme" %>
-  <%= stylesheet_link_tag "home" if home_page? %>
   <%= yield :stylesheets %>
 
   <%= render '/refinery/google_analytics' %>
-
-  <%= javascript_include_tag 'modernizr-min' %>
 </head>

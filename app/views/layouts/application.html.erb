@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<%= render 'refinery/head'%>
 	<body>
@@ -11,23 +12,23 @@
 				<a href="#">
 				  <img src="/assets/logo_small.png" alt="Kerweb">
 				</a>
-				<ul>
-				  <li>
-					 <a href="#home"><%=t 'home.title' %></a>
-				  </li>
-				  <li>
-					 <a href="#whatwedo"><%=t 'what_we_do.title' %></a>
-				  </li>
-				  <li>
-					 <a href="#contact"><%=t 'contacts.title' %></a>
-				  </li>
-				</ul>
-			 </div>
+			</div>
+			<ul>
+			  <li>
+				 <a href="#home"><%=t 'home.title' %></a>
+			  </li>
+			  <li>
+				 <a href="#whatwedo"><%=t 'what_we_do.title' %></a>
+			  </li>
+			  <li>
+				 <a href="#contact"><%=t 'contacts.title' %></a>
+			  </li>
+			</ul>
 		  </nav>
 		</div>
 		<!-- END NAVIGATION ############################################### -->
 		<!-- WHAT WE DO SECTION ############################################### -->
-		<section id='contact'>
+		<section id='whatwedo'>
 			 <div class="row">
 				  <div class="twelve columns centered">
 					 <h2>
@@ -55,22 +56,19 @@
 						</h2>
 				  </div>
 			 </div>
-
 			 <div class="row">
-			 <div class="eleven columns centered">
-				<p class="subtittle">
-				  <%=t 'contacts.greeting_clients.html' %>
-				</p>
-			 </div>
+				<div class="eleven columns centered">
+					<p class="subtittle">
+					  <%=t 'contacts.greeting_clients.html' %>
+					</p>
+				</div>
 			 </div>
 			 <div class="row">
 				  <div class="seven columns">
 						<form action="/formPost" method="post" name="offerForm" enctyoe="multipart/form-data">
 							 <input name="offer[name]" placeholder="<%=t('placeholder.first_name')%>" required="" type="text">
 							 <input name="offer[email]" placeholder="<%=t('placeholder.email')%>" required="" type="email">
-							 <textarea cols="1" name="offer[body]" placeholder="<%=t('placeholder.textarea')%>" required="" rows="5">
-								  <%=:preserve %>
-							 </textarea>
+							 <textarea cols="1" name="offer[body]" placeholder="<%=t('placeholder.textarea')%>" required="" rows="5"></textarea>
 							 <button  name="send" type="submit">
 								  <%=t 'placeholder.submit' %>
 							 </button>
@@ -81,7 +79,10 @@
 							 <%=t 'contacts.where_can_find' %>
 						</h4>
 						<br/>
-						<%=t 'contacts.contact_us' %>
+						<%=t 'contacts.address.html' %>
+						<h4>
+							<%=t 'contacts.contact_us' %>
+						</h4>
 						<br/>
 						<p>
 							 e-mail:
