@@ -1,0 +1,24 @@
+<section id='whatwedo'>
+	 <div class="row">
+		  <div class="twelve columns centered">
+			 <h2>
+				<%=sanitize @page.content_for('whatwedo'), tags: '%w()'  %>
+				<i class="title_line"></i>
+			 </h2>
+		  </div>
+	 </div>
+	 <div class="row">
+		<div class="eleven columns centered">
+			<p class="subtittle">
+			  <%=sanitize @page.content_for('whatwedo.desc'), tags: '%w()' %>
+			</p>
+		</div>
+	 </div>
+	 <div class="row">
+		  <ul id="og-grid" class="og-grid">
+		  <% @projects.each do |project| %>
+			 <%= render '/refinery/projects/miniproject', :project => project %>
+		  <% end %>
+		  </ul>
+	 </div>
+</section>

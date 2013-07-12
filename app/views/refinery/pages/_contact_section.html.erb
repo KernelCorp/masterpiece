@@ -1,0 +1,42 @@
+<section id="contact">
+	 <div class="row">
+		  <div class="twelve columns centered">
+				<h2>
+					 <%=sanitize @page.content_for('contacts'), tags: '%w()' %>
+					 <i class="title_line"></i>
+				</h2>
+		  </div>
+	 </div>
+	 <div class="row">
+		<div class="eleven columns centered">
+			<p class="subtittle">
+			  <%=sanitize @page.content_for('contacts.desc'), tags: '%w()' %>
+			</p>
+		</div>
+	 </div>
+	 <div class="row">
+		  <div class="seven columns">
+				<form action="/formPost" method="post" name="offerForm" enctyoe="multipart/form-data">
+					 <input name="offer[name]" placeholder="<%=t 'placeholder.first_name'%>" required="" type="text">
+					 <input name="offer[email]" placeholder="<%=t 'placeholder.email'%>" required="" type="email">
+					 <textarea cols="1" name="offer[body]" placeholder="<%=t 'placeholder.textarea' %>" required="" rows="5"></textarea>
+					 <button  name="send" type="submit">
+						  <%=t 'placeholder.submit' %>
+					 </button>
+				</form>
+		  </div>
+		  <div class="five columns info">
+				<h4>
+					 <%=sanitize @page.content_for('wherefindus'), tags: '%w()' %>
+				</h4>
+				<br/>
+				<%=sanitize @page.content_for('wherefindus.desc'), tags: '%w()' %>
+				<h4>
+					<%=sanitize @page.content_for('contactsus'), tags: '%w()' %>
+				</h4>
+				<br/>
+				<%=sanitize @page.content_for('contactus.desc'), tags: '%w()'%>
+		  </div>
+	 </div>
+</section>
+
