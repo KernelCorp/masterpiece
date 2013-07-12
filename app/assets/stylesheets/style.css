@@ -169,7 +169,7 @@ nav select {
 	
 #social_module {
 	background-color:#fFF;
-	padding:0px 0px 30px;}
+	padding:30px 0px 30px;}
 	
 	
 footer {
@@ -268,7 +268,7 @@ footer {
 }
 
 /* SELECTED ILLUSTRATION */
-
+/*
 .og-grid li.og-expanded > a::after {
 	border: solid transparent;
 	content: " ";
@@ -281,7 +281,7 @@ footer {
 	border-width: 15px;
 	margin: 175px 0px 0px -140px;
 }
-
+*/
 /* PREVIEW CLASS */
 
 .og-expander {

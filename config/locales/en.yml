@@ -3,6 +3,8 @@ en:
     title: 'Home'
   what_we_do:
     title: 'What we do'
+    greeting_clients:
+      html: "Making dream real! Watch our projects!"
   contacts: 
     title: 'Contacts'
     where_can_find: 'Where find us'
