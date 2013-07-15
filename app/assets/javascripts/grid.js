@@ -354,10 +354,12 @@ var Grid = (function() {
 			}
 		},
 		update : function( $item ) {
-			
-			_tempItem = this.$item
-			
+		
+			!this._timeout || clearTimeout(this._timeout)
+			_tempItem = undefined
+
 			if( $item ) {
+				_tempItem = this.$item
 				this.$item = $item;
 			}
 			
@@ -388,7 +390,7 @@ var Grid = (function() {
 
 			this.setHeights();
 
-			_tempItem.css('height', this.itemHeight)
+			this._timeout = setTimeout(function(){!_tempItem || _tempItem.css('height', _tempItem.data('height')); this.positionPreview()}, 100)
 
 			var self = this;
 			
@@ -424,6 +426,8 @@ var Grid = (function() {
 
 		},
 		close : function() {
+			
+			!this._timeout || clearTimeout(this._timeout)
 
 			var self = this,
 				onEndFn = function() {
@@ -499,7 +503,8 @@ var Grid = (function() {
 			// case 3 : preview height + item height does not fit in window´s height and preview height is bigger than window´s height
 			var position = this.$item.data( 'offsetTop' ) - 60,
 				previewOffsetT = this.$previewEl.offset().top - scrollExtra - 60,
-				scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
+				scrollVal = position;
+				//scrollVal = this.height + this.$item.data( 'height' ) + marginExpanded <= winsize.height ? position : this.height < winsize.height ? previewOffsetT - ( winsize.height - this.height ) : previewOffsetT;
 			
 			$body.animate( { scrollTop : scrollVal }, settings.speed );
 
