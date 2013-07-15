@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: masterpiece_production
   pool: 5
-  username: root
-  password:
+  username: kerweb
+  password: ztSFL2MDr9vPTDQD
   host: localhost
