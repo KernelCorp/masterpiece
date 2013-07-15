@@ -390,7 +390,9 @@ var Grid = (function() {
 
 			this.setHeights();
 
-			this._timeout = setTimeout(function(){!_tempItem || _tempItem.css('height', _tempItem.data('height')); this.positionPreview()}, 100)
+			this._timeout = setTimeout(function(){
+				!_tempItem || _tempItem.css('height', _tempItem.data('height'))
+			}, 300)
 
 			var self = this;
 			

@@ -20,7 +20,7 @@
 					 <input name="offer[name]" placeholder="<%=t 'placeholder.first_name'%>" required="" type="text">
 					 <input name="offer[email]" placeholder="<%=t 'placeholder.email'%>" required="" type="email">
 					 <textarea cols="1" name="offer[body]" placeholder="<%=t 'placeholder.textarea' %>" required="" rows="5"></textarea>
-					 <button  name="send" type="submit">
+					 <button  name="send" type="submit" class="submit">
 						  <%=t 'placeholder.submit' %>
 					 </button>
 				</form>
@@ -32,7 +32,7 @@
 				<br/>
 				<%=sanitize @page.content_for('wherefindus.desc'), tags: '%w()' %>
 				<h4>
-					<%=sanitize @page.content_for('contactsus'), tags: '%w()' %>
+					<%=sanitize @page.content_for('contactus'), tags: '%w()' %>
 				</h4>
 				<br/>
 				<%=sanitize @page.content_for('contactus.desc'), tags: '%w()'%>
