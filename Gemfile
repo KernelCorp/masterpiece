@@ -23,8 +23,6 @@ end
 gem 'jquery-rails', '~> 2.0.0'
 gem 'refinerycms', '~> 2.0.0'
 gem 'refinerycms-i18n'
-# gem 'i18n'
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
