@@ -5,6 +5,13 @@ module Refinery
 
         crudify :'refinery/projects/project', :xhr_paging => true
 
+
+        def create
+          @page = Page.new
+          @page.title = params[:project][:title]
+          @page.save!
+        end
+
       end
     end
   end
