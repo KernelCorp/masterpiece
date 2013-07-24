@@ -1,0 +1,64 @@
+.cont > .og-expander {
+	/*::​transition: height 350ms ease;
+	::-webkit-transition: height 350ms ease;*/
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    width: auto;
+    height: 420px;
+}
+
+.cont{
+    background-color: #EEE;
+    text-align: center;
+    min-height: 75%;
+    height: auto;
+}
+
+.cont  .og-expander-inner{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+.cont  .og-fulling
+{
+    width: 50%;
+    height: 80%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.cont .og-fulling > img{
+    max-height: 100%;
+}
+
+.cont  .og-details{
+    float: right;
+    line-height: 20px;
+    margin-top: 0px;
+}
+.cont  .og-details > h3
+{
+    line-height: 50px;
+}
+.image-container{
+    width: 384px;
+    margin-right: 0px;
+    float: left
+}
+
+.text-container{
+    text-align: left;
+    font-size: 150%;
+    padding-bottom:20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+footer{
+    bottom: 0px;
+}

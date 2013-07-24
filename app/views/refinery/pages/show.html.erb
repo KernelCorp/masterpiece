@@ -1,18 +1,9 @@
-<!-- HEADER HOME ############################################### -->
-<%= render 'refinery/header'%>
-<!-- END HEADER HOME ############################################### -->
 <!-- NAVIGATION ############################################### -->
-<%= render 'refinery/pages/nav_container'%>
+<%= render 'refinery/pages/nav_container_show'%>
 <!-- END NAVIGATION ############################################### -->
-<!-- WHAT WE DO SECTION ############################################### -->
-<%= render 'refinery/pages/whatwedo_section'%>
-<!-- END WHAT WE DO SECTION ############################################### -->
-<!-- CONTACT SECTION ############################################### -->
-<%= render 'refinery/pages/contact_section'%>
-<!-- END CONTACT SECTION ############################################### -->
-<!-- SOCIAL MODULE ############################################### -->
-<%= render 'refinery/pages/social_module'%>
-<!-- END SOCIAL MODULE ############################################### -->
+<!-- PAGE BODY ############################################### -->
+<%=render 'refinery/pages/body' %>
+<!-- END PAGE BODY ############################################### -->
 <% if @notice %>
     <div class="modal">
         <p>
@@ -30,4 +21,5 @@
 <script src="/assets/jquery.tweet.js" type="text/javascript"></script>
 <script src="/assets/scripts.js" type="text/javascript"></script>
 <script src="/assets/grid.js" type="text/javascript"></script>
+
 <!-- END JAVASCRIPTS ############################################### -->
