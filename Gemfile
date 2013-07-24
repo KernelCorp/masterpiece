@@ -23,6 +23,7 @@ end
 gem 'jquery-rails', '~> 2.0.0'
 gem 'refinerycms', '~> 2.0.0'
 gem 'refinerycms-i18n', '2.0.2'
+gem 'russian'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

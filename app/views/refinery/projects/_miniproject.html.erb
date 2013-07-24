@@ -1,5 +1,8 @@
 <li>
-	<a data-description= "<%= project.description %>" data-largesrc="<%= project.photo.thumbnail("800x600#").url %>" data-title= "<%= project.title %>" href=#>
+  <% url= # %>
+  <% if !project.page.nil? %>
+    <% url='/' + project.page.url[:path][0] + '/'%>
+  <% end%>
+	<a data-description= "<%= project.description %>" data-largesrc="<%= project.photo.thumbnail("800x600#").url %>" data-title= "<%= project.title %>" href=<%=url%>>
 		<img src="<%= project.photo.thumbnail("250x185#").url %>" alt="<%= project.title %>" > </a>
-
 </li>

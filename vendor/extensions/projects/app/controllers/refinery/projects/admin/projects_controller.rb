@@ -8,7 +8,7 @@ module Refinery
         def create
 
           #@page.title = params[:project][:title]
-          newPage = {'title' => params[:project][:title],
+          newPage = {'title' => Russian.translit(params[:project][:title]),
                      'parts_attributes' => {
                          '0' =>
                          {'title' => 'body',
