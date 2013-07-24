@@ -1,0 +1,19 @@
+<section id="partner">
+  <div class="row">
+    <div class="twelve columns centered">
+      <h2>
+        <%=sanitize @page.content_for('partner'), tags: '%w()' %>
+        <i class="title_line"></i>
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="eleven columns centered">
+      <p class="subtittle">
+        <%=sanitize @page.content_for('partner.desc'), tags: '%w()' %>
+      </p>
+    </div>
+  </div>
+
+</section>
+
