@@ -11,6 +11,7 @@ module Refinery
       validates :title, :presence => true, :uniqueness => true
 
       belongs_to :photo, :class_name => '::Refinery::Image'
+      belongs_to :page, :class_name => '::Refinery::Page'
     end
   end
 end

@@ -1,0 +1,16 @@
+<% project = Refinery::Projects::Project.where(:page_id => @page.id).first%>
+<container>
+    <div class="og-expander">
+      <div class="og-expander-inner">
+        <div class="image-container">
+            <div class="og-fulling">
+                <img src=<%= project.photo.thumbnail("384x288#").url %> alt=<%=project.title%> class='picture'>
+            </div>
+        </div>
+        <div class="og-details show-all">
+          <h3><%= @page.title %></h3>
+          <%= @page.content_for(:body)%>
+        </div>
+      </div>​
+    </div>
+</container>
