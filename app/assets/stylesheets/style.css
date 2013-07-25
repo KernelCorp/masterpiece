@@ -349,7 +349,8 @@ footer {
 	font-size: 52px;
 	padding: 10px 0 10px;
 	margin-bottom: 10px;
-	color:#555;}
+	color:#555;
+    line-height: 40px;}
 
 .og-details p {
 	font-weight: 400;

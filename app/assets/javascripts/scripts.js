@@ -62,7 +62,7 @@ setInterval(function() {
 /* -- 03. SCROLL TO  -- */
 
 
-$('nav a, #down_button a').click(function(e){
+$('nav a.for-nav, #down_button a').click(function(e){
     $('html,body').scrollTo(this.hash, this.hash);
     e.preventDefault();
 });
@@ -93,7 +93,7 @@ $(function() {
 				nav.stop().removeClass("sticky").css("top",nav.outerHeight()+waypoint_offset).animate({"top":""});
 				
 			}
-			
+
 		},
 		offset: function() {
 			return -nav.outerHeight()-waypoint_offset;
