@@ -394,7 +394,7 @@ footer {
     height:auto !important;
     margin: 0px 0px 0px 0px !important;
 }
-.og-details ul {
+.og-details ol, ul {
     padding-left: 20px;
     padding-bottom: 10px;
 }
