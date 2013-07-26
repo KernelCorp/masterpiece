@@ -5,6 +5,6 @@ Refinery::PagesController.class_eval do
 	private
 
 	def bind_projects
-		@projects = Refinery::Projects::Project.all
+		@projects = Refinery::Projects::Project.all(:order => 'position')
 	end
 end
