@@ -59,7 +59,9 @@
     width: 50%;
 }
 
-
+.text-container p{
+   padding-bottom:5px;
+}
 footer{
     bottom: 0px;
 }
