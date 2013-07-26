@@ -62,6 +62,9 @@
 .text-container p{
    padding-bottom:5px;
 }
+.text-container li {
+    display: list-item;
+}
 footer{
     bottom: 0px;
 }

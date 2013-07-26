@@ -350,7 +350,7 @@ footer {
 	padding: 10px 0 10px;
 	margin-bottom: 10px;
 	color:#555;
-    line-height: 40px;}
+    line-height: 50px;}
 
 .og-details p {
 	font-weight: 400;
@@ -386,6 +386,10 @@ footer {
 	background: #555;
 	border-color: #555;
 	color: #FFF;}
+
+.og-details li {
+    display: list-item;
+}
 
 .og-loading {
 	width: 20px;
