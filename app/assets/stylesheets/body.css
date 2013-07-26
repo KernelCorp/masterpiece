@@ -10,7 +10,7 @@
 }
 
 .cont{
-    background-color: #EEE;
+    background-color:#ead6ea;
     text-align: center;
     min-height: 75%;
     height: auto;
@@ -58,6 +58,7 @@
     margin: 0 auto;
     width: 50%;
 }
+
 
 footer{
     bottom: 0px;
