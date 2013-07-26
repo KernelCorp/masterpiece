@@ -148,7 +148,7 @@ nav select {
     background-attachment : fixed;  /* FIXED FOR IE */}
 
 #whatwedo {
-	background-color:#EEE;
+	background-color:#ead6ea;
 	padding:70px 0px 50px;}
 
 
@@ -158,7 +158,7 @@ nav select {
 	
 	
 #contact {
-	background-color:#f9f9f9;
+	background-color: #f2e2f2;
 	padding:70px 0px 50px;}
 #partner {
     padding:70px 0px 50px;}
@@ -288,7 +288,7 @@ footer {
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: #ccbccc;
 	top: auto;
 	left: 0;
 	width: 100%;
@@ -366,8 +366,8 @@ footer {
 	text-decoration: underline;
 	letter-spacing: 2px;
 	padding: 10px 20px;
-	background: #00aed7;
-	border: 3px solid #00aed7;
+	background: #84648f;
+	border: 3px solid #84648f;
 	display: inline-block;
 	margin: 30px 0 0;
 	outline: none;
@@ -447,8 +447,8 @@ footer {
 	-ms-transition:all .3s ease-in-out;
 	-o-transition:all .3s ease-in-out;
 	-webkit-transition:all .3s ease-in-out;
-	background:#00aed7;
-	border:2px solid #00aed7;
+	background:#84648f;
+	border:2px solid #84648f;
 	color:#FFF;
 	font-size:12px;
 	height:40px;
