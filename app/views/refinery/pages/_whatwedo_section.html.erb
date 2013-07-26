@@ -16,7 +16,7 @@
 	 </div>
 	 <div class="row">
 		  <ul id="og-grid" class="og-grid">
-		  <% @projects.each do |project| %>
+		  <% @projects.reverse_each do |project| %>
 			 <%= render '/refinery/projects/miniproject', :project => project %>
 		  <% end %>
 		  </ul>
