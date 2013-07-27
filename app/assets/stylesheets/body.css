@@ -1,7 +1,15 @@
-
+.cont > .og-expander {
+	/*::​transition: height 350ms ease;
+	::-webkit-transition: height 350ms ease;*/
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 20px;
+    width: auto;
+}
 
 .cont{
-    background-color: #EEE;
+    background-color:#ead6ea;
     text-align: center;
     min-height: 75%;
     height: auto;
@@ -52,10 +60,18 @@ h3.page-title{
     width: 50%;
 }
 
-/*.cont > .og-grid > li > a {*/
-    /*display: none;*/
-/*}*/
-
+.text-container p{
+   padding-bottom: 10px;
+}
+.text-container li {
+    display: list-item;
+    height:auto !important;
+    margin: 0px 0px 0px 0px !important;
+}
+.text-container ol, ul {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
 footer{
     bottom: 0px;
 }
