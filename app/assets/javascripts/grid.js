@@ -209,7 +209,7 @@ var Grid = (function() {
 		support = Modernizr.csstransitions,
 		// default settings
 		settings = {
-			minHeight : 420,
+			minHeight : 350,
 			speed : 350,
 			easing : 'ease'
 		};
@@ -232,6 +232,12 @@ var Grid = (function() {
 		} );
 
 	}
+
+
+    function init_one_page(){
+        $item = $('.og0grid li');
+        showPreview($item);
+    }
 
 	// saves the item´s offset top and height (if saveheight is true)
 	function saveItemInfo( saveheight ) {
@@ -464,7 +470,7 @@ var Grid = (function() {
 		},
 		calcHeight : function() {
 
-			var heightPreview = this.$details.height() + 120,
+			var heightPreview = this.$details.height()+80,
 				itemHeight = heightPreview + 200;
 			//var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
 			//	itemHeight = winsize.height;
@@ -520,6 +526,7 @@ var Grid = (function() {
 		}
 	}
 
-	return { init : init };
+	return { init : init,
+            init_one_page: init_one_page};
 
 })();
