@@ -235,7 +235,7 @@ var Grid = (function() {
 
 
     function init_one_page(){
-        $item = $('.og0grid li');
+        $item = $('.og-grid li');
         showPreview($item);
     }
 
