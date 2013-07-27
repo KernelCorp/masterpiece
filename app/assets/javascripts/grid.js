@@ -194,6 +194,7 @@ var Grid = (function() {
 		scrollExtra = 0,
 		// extra margin when expanded (between preview overlay and the next items)
 		marginExpanded = 10,
+        onePage = false,
 		$window = $( window ), winsize,
 		$body = $( 'html, body' ),
 		// transitionend events
@@ -235,6 +236,7 @@ var Grid = (function() {
 
 
     function init_one_page(){
+        onePage = true;
         $item = $('.og-grid li');
         showPreview($item);
     }
@@ -321,6 +323,11 @@ var Grid = (function() {
 		// initialize new preview for the clicked item
 		preview = $.data( this, 'preview', new Preview( $item ) );
 		// expand preview overlay
+
+        if (onePage) {
+            preview.onePage = true;
+        }
+
 		preview.open();
 
 	}
@@ -472,6 +479,7 @@ var Grid = (function() {
 
 			var heightPreview = this.$details.height()+80,
 				itemHeight = heightPreview + 200;
+
 			//var heightPreview = winsize.height - this.$item.data( 'height' ) - marginExpanded,
 			//	itemHeight = winsize.height;
 
@@ -479,6 +487,10 @@ var Grid = (function() {
 				heightPreview = settings.minHeight;
 				itemHeight = settings.minHeight + 200// + this.$item.data( 'height' ) + marginExpanded;
 			}
+
+            if (this.onePage){
+                itemHeight -= 200;
+            }
 
 			this.height = heightPreview;
 			this.itemHeight = itemHeight;
