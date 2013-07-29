@@ -1,3 +1,11 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #ead6ea;;
+}
+
 .cont > .og-expander {
 	/*::​transition: height 350ms ease;
 	::-webkit-transition: height 350ms ease;*/
@@ -11,43 +19,51 @@
 .cont{
     background-color:#ead6ea;
     text-align: center;
-    min-height: 75%;
+    min-height: 82.5%;
     height: auto;
 }
 
-.cont  .og-expander-inner{
+
+.between {
+    height: auto;
     width: 100%;
-    margin: 0 auto;
-    height: 100%;
-}
-
-
-.cont  .og-fulling
-{
-    width: 50%;
-    height: 80%;
+    min-height: 50px;
     position: relative;
-    float: left;
-    text-align: center;
-}
-
-.cont .og-fulling > img{
-    max-height: 100%;
+    background-color:#ead6ea;
 }
 
 .cont  .og-details{
     float: right;
     line-height: 20px;
-    margin-top: 0px;
+    margin-top: 0;
 }
-.cont  .og-details > h3
-{
-    line-height: 50px;
+
+
+.cont .og-close{
+    display: none;
 }
-.image-container{
-    width: 384px;
-    margin-right: 0px;
-    float: left
+
+.cont a {
+    display: none;
+}
+
+.cont .og-grid{
+    padding-top: 0;
+}
+
+.cont .og-grid li{
+    height: 20px;
+}
+
+.cont .og-expander{
+    margin-top: 0;
+}
+
+h3.page-title{
+    font-weight: 300;
+    font-size: 52px;
+    color:#555;
+    line-height: 100px;
 }
 
 .text-container{
