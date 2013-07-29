@@ -237,7 +237,7 @@ var Grid = (function() {
 
     function init_one_page(){
         onePage = true;
-        $item = $('.og-grid li');
+        $item = $('.og-grid li#miniproject');
         showPreview($item);
     }
 
