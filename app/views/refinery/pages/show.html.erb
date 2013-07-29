@@ -1,16 +1,18 @@
-<!-- NAVIGATION ############################################### -->
-<%= render 'refinery/pages/nav_container_show'%>
-<!-- END NAVIGATION ############################################### -->
-<!-- PAGE BODY ############################################### -->
-<%=render 'refinery/pages/body' %>
-<!-- END PAGE BODY ############################################### -->
-<% if @notice %>
-     <div class="modal">
-         <p>
-             <%= @notice %>
-         </p>
-     </div>
-<% end %>
+<div id='wrap'>
+    <!-- NAVIGATION ############################################### -->
+     <%= render 'refinery/pages/nav_container_show'%>
+    <!-- END NAVIGATION ############################################### -->
+    <!-- PAGE BODY ############################################### -->
+    <%=render 'refinery/pages/body' %>
+    <!-- END PAGE BODY ############################################### -->
+    <% if @notice %>
+         <div class="modal">
+             <p>
+                 <%= @notice %>
+             </p>
+         </div>
+    <% end %>
+</div>
 <!-- FOOTER ############################################### -->
 <%= render 'refinery/footer' %>
 <!-- END FOOTER ############################################### -->

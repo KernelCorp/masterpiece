@@ -3,8 +3,8 @@
   <ul id="og-grid" class="og-grid">
     <h3 class="page-title"><%= project.title%></h3>
     <%= render '/refinery/projects/miniproject', :project => project %>
-    <div class = 'text-container'>
-      <%= raw @page.content_for(:body)%>
-    </div>
   </ul>
+  <div class = 'text-container'>
+    <%= raw @page.content_for(:body)%>
+  </div>
 </div>
