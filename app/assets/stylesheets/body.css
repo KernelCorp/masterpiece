@@ -1,9 +1,28 @@
 html, body{
-    height: 100%;
+    height: auto;
 }
 
 body{
     background-color: #ead6ea;;
+}
+
+.header> a{
+    color:#333;
+    position:relative;
+    display:inline-block;
+    font-weight: 300;
+    text-decoration:underline;
+    font-size:12px;
+    text-transform:uppercase;
+    float: right;
+    margin-right: 30px;
+    line-height: 60px;
+}
+
+.header> a:hover,
+.header>a.selected {
+    text-decoration: underline;
+    color:#00aed7;
 }
 
 .cont > .og-expander {
@@ -19,18 +38,27 @@ body{
 .cont{
     background-color:#ead6ea;
     text-align: center;
-    min-height: 82.5%;
     height: auto;
+    padding-top: 60px;
 }
 
 
-.between {
-    height: auto;
-    width: 100%;
-    min-height: 50px;
-    position: relative;
-    background-color:#ead6ea;
+#wrap{
+    margin-bottom: -75px;
+    min-height: 100%;
+    top: 60px;
 }
+
+.cont:after{
+    content: "";
+    display: block;
+}
+
+footer, #wrap:after{
+  height: 75px;
+}
+
+
 
 .cont  .og-details{
     float: right;
@@ -69,7 +97,7 @@ h3.page-title{
 .text-container{
     text-align: left;
     font-size: 150%;
-    padding-bottom:20px;
+    padding-bottom:80px;
     margin: 0 auto;
     width: 50%;
 }
