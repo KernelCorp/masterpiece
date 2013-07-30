@@ -352,8 +352,17 @@ var Grid = (function() {
 			// create Preview structure:
             this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href=#>Подробнее</a>' );
-			this.$details = $( '<div class="og-details show-all"></div>' ).append( this.$title, this.$description, this.$href );
+			this.$href = $( '<a class="go-to-page" href=#>Подробнее</a>' );
+            this.$soc_links_ul = $('<ul class = "soc-links"></ul>');
+            this.$vk_link = $( '<li class="vk-link"><a class="soc-link-href" href=#></li>' );
+            this.$facebook_link = $( '<li class="facebook-link"><a class="soc-link-href" href=#></li>' );
+            this.$youtube_link = $( '<li class="youtube-link"><a class="soc-link-href" href=#></li>' );
+            this.$twitter_link = $( '<li class="twitter-link"><a class="soc-link-href" href=#></li>' );
+            this.$od_link = $( '<li class="od-link"><a class="soc-link-href" href=#></li>' );
+            this.$soc_links_ul.append(this.$vk_link, this.$facebook_link,
+                this.$youtube_link, this.$twitter_link, this.$od_link);
+            this.$soc_links = $( '<div class="soc_links_wrapper"></div>').append(this.$soc_links_ul)
+			this.$details = $( '<div class="og-details show-all"></div>' ).append( this.$title, this.$description, this.$href, this.$soc_links );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -394,12 +403,74 @@ var Grid = (function() {
 					href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
-					description : $itemEl.data( 'description' )
+					description : $itemEl.data( 'description' ),
+                    vk_link : $itemEl.data('vk'),
+                    facebook_link : $itemEl.data('facebook'),
+                    youtube_link : $itemEl.data('youtube'),
+                    twitter_link : $itemEl.data('twitter'),
+                    od_link : $itemEl.data('od')
 				};
 
 			this.$title.html( eldata.title );
 			this.$description.html( eldata.description );
 			this.$href.attr( 'href', eldata.href );
+
+            check_http = function(url){
+                if (!(url.match(/http:\/\//) ||url.match(/https:\/\//))){
+                    url = 'http://' + url;
+                }
+                return url;
+            }
+
+            if (eldata.vk_link != "" ){
+               eldata.vk_link = check_http(eldata.vk_link);
+               this.$vk_link.css('display','inline');
+               this.$vk_link.children('a').attr('href',eldata.vk_link );
+            }
+            else
+            {
+               this.$vk_link.css('display','none')
+            }
+
+            if (eldata.facebook_link != "" ){
+                eldata.facebook_link = check_http(eldata.facebook_link);
+                this.$facebook_link.children('a').attr('href', eldata.facebook_link );
+                this.$facebook_link.css('display','inline')
+            }
+            else
+            {
+                this.$facebook_link.css('display','none')
+            }
+
+            if (eldata.youtube_link != "" ){
+                eldata.youtube_link = check_http(eldata.youtube_link);
+                this.$youtube_link.children('a').attr('href', eldata.youtube_link );
+                this.$youtube_link.css('display','inline')
+            }
+            else
+            {
+                this.$youtube_link.css('display','none')
+            }
+
+            if (eldata.twitter_link != "" ){
+                eldata.twitter_link = check_http(eldata.twitter_link);
+                this.$twitter_link.children('a').attr('href', eldata.twitter_link );
+                this.$twitter_link.css('display','inline')
+            }
+            else
+            {
+                this.$twitter_link.css('display','none')
+            }
+
+            if (eldata.od_link != "" ){
+                eldata.od_link = check_http(eldata.od_link);
+                this.$od_link.children('a').attr('href', eldata.od_link);
+                this.$od_link.css('display','inline')
+            }
+            else
+            {
+                this.$od_link.css('display','none')
+            }
 
 			this.setHeights();
 

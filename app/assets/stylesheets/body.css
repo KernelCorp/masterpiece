@@ -71,9 +71,10 @@ footer, #wrap:after{
     display: none;
 }
 
-.cont a {
+.cont a.go-to-page, .cont a.miniproject   {
     display: none;
 }
+
 
 .cont .og-grid{
     padding-top: 0;

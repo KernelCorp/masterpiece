@@ -648,6 +648,76 @@ footer {
 	color:#00aed7;}
 
 
+/* ============ social links syles ===============  */
 
 
+.soc_links_wrapper{
+    display: inline;
+    line-height: 44px;
+}
 
+ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links  a.soc-link-href{
+    height: 46px;
+    width: 46px;
+    border-width: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+#whatwedo ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links  a.soc-link-href{
+    height: 46px;
+    width: 46px;
+    border-width: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+
+ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.vk-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') 0 0 no-repeat;
+}
+
+#whatwedo ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.vk-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') 0 0 no-repeat;
+}
+
+ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.facebook-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -47px 0 no-repeat;
+}
+
+#whatwedo ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.facebook-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -47px 0 no-repeat;
+}
+
+ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.youtube-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -95px 0 no-repeat;
+}
+
+#whatwedo ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.youtube-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -95px 0 no-repeat;
+}
+
+ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.twitter-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -142px 0 no-repeat;
+}
+
+#whatwedo ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.twitter-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -142px 0 no-repeat;
+}
+
+
+ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.od-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -189px 0 no-repeat;
+}
+
+#whatwedo ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links > li.od-link > a.soc-link-href{
+    background: url('/assets/soc_links.png') -189px 0 no-repeat;
+}
+
+ul.og-grid div.og-details  div.soc_links_wrapper > ul.soc-links  a.soc-link-href:before{
+    content: "";
+}
+
+ul.soc-links{
+    display: inline;
+}

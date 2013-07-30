@@ -3,6 +3,7 @@
   <% if !project.page.nil? %>
     <% url='/' + project.page.url[:path][0] + '/'%>
   <% end%>
-	<a data-description= "<%= project.description %>" data-largesrc="<%= project.photo.thumbnail("800x600#").url %>" data-title= "<%= project.title %>" href=<%=url%>>
-		<img src="<%= project.photo.thumbnail("250x185#").url %>" alt="<%= project.title %>" > </a>
+  <a class="miniproject" data-description= "<%= project.description %>" data-largesrc="<%= project.photo.thumbnail("800x600#").url %>" data-title= "<%= project.title %>" href="<%=url%>"
+     data-vk="<%= project.vk_link%>" data-facebook="<%= project.facebook_link%>" data-od="<%= project.od_link%>" data-twitter="<%= project.twitter_link%>" data-youtube="<%= project.youtube_link%>">
+  <img src="<%= project.photo.thumbnail("250x185#").url %>" alt="<%= project.title %>"  > </a>
 </li>
