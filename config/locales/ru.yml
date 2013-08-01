@@ -5,7 +5,7 @@ ru:
   home: 
     title: 'Вверх'
   what_we_do:
-    title: 'Наши работы'
+    title: 'Наши проекты'
   contacts: 
     title: 'Контакты'
     where_can_find: 'Где нас найти'
@@ -15,9 +15,9 @@ ru:
     greeting_clients:
       html: 'Мы в данный момент рассматриваем получение новых интересных заданий. <br/> Думаете мы можем помочь? Мы очень хотели бы услышать от вас чем.'
   placeholder:
-    first_name: 'ВАШЕ ЗАМЕЧАТЕЛЬНОЕ ИМЯ'
+    first_name: 'ВАШЕ ИМЯ'
     email: 'E-MAIL'
-    textarea: 'РАССКАЖИТЕ НАМ ВСЕ'
+    textarea: 'ТЕКСТ СООБЩЕНИЯ'
     submit: 'ОК'
   date:
     abbr_day_names:
