@@ -10,7 +10,7 @@
   <div class="row">
     <div class="eleven columns centered">
       <p class="subtittle">
-        <%=sanitize @page.content_for('partner.desc'), tags: '%w()' %>
+        <%= raw @page.content_for('partner.desc') %>
       </p>
     </div>
   </div>

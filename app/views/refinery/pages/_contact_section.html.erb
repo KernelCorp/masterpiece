@@ -10,7 +10,7 @@
 	 <div class="row">
 		<div class="eleven columns centered">
 			<p class="subtittle">
-			  <%=sanitize @page.content_for('contacts.desc'), tags: '%w()' %>
+			  <%= raw @page.content_for('contacts.desc') %>
 			</p>
 		</div>
 	 </div>
@@ -29,11 +29,11 @@
 				<h4>
 					 <%=sanitize @page.content_for('wherefindus'), tags: '%w()' %>
 				</h4>
-				<%=sanitize @page.content_for('wherefindus.desc'), tags: '%w()' %>
+				<%= raw @page.content_for('wherefindus.desc') %>
 				<h4>
 					<%=sanitize @page.content_for('contactus'), tags: '%w()' %>
 				</h4>
-				<%=sanitize @page.content_for('contactus.desc'), tags: '%w()'%>
+				<%= raw @page.content_for('contactus.desc')%>
 		  </div>
 	 </div>
 </section>
