@@ -95,6 +95,16 @@
 	-moz-animation-delay: 0.3s;
 	animation-delay: 0.3s;}
 
+.fade-it.punk-and-high {
+	position: absolute;
+	top: 20px;
+	left: 15px;
+}
+
+.fade-it.punk-and-high .roles {
+	color: #aa2277;
+}
+
 
 /* 02. MAX WIDTH 960px ================================================== */
 
