@@ -15,7 +15,7 @@ development:
   database: masterpiece_development
   pool: 5
   username: root
-  password:
+  password: qwas
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: masterpiece_production
   pool: 5
-  username: kerweb
-  password: ztSFL2MDr9vPTDQD
+  username: masterpiece
+  password: 8625AFsG
   host: localhost
