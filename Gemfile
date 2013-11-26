@@ -25,6 +25,13 @@ gem 'refinerycms', '~> 2.0.0'
 gem 'refinerycms-i18n', '2.0.2'
 gem 'russian'
 
+group :development do
+  gem 'capistrano'
+  gem 'rvm-capistrano'
+  gem 'nginx-config'
+end
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -32,7 +39,7 @@ gem 'russian'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
