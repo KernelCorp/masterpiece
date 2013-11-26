@@ -98,5 +98,4 @@ vendor/extensions/**/spec/dummy
 .orig
 
 #Garbage
-Gemfile.lock
 schema.rb
