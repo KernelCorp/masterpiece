@@ -6,7 +6,7 @@ require 'bundler/capistrano' # Для работы bundler. При измене�
 set :application, "masterpiece"
 set :site_domain, "mfc-shedevr.ru/"
 set :rails_env, "production"
-set :domain, "mkonin@137.117.230.217"
+set :domain, "mkonin@185.4.75.151"
 set :deploy_to, "/var/www/#{application}"
 set :use_sudo, false
 set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
@@ -14,7 +14,7 @@ set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
 set :normalize_asset_timestamps, false
 set :keep_releases, 5
 
-set :rvm_ruby_string, 'ruby-2.0.0-p247'
+set :rvm_ruby_string, 'ruby-2.0.0-p353'
 
 set :scm, :git
 set :repository,  "https://github.com/KernelCorp/masterpiece.git"
