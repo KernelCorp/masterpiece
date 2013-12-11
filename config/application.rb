@@ -60,12 +60,13 @@ module Masterpiece
     config.assets.version = '1.0'
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
-        address:              'smtp.mail.ru',
-        port:                 465,
-        domain:               'mail.ru',
-        user_name:            'mfc-shedevr@mail.ru',
-        password:             'shedevrladoha ',
+        address:              'smtp.gmail.com',
+        port:                  587,
+        domain:               'gmail.com',
+        user_name:            'mfcshedevr@gmail.com',
+        password:             'shedevrladoha',
         authentication:       'plain',
-        enable_starttls_auto: true  }
+        enable_starttls_auto:  true  }
+
   end
 end

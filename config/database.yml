@@ -15,7 +15,7 @@ development:
   database: masterpiece_development
   pool: 5
   username: root
-  password: qwas
+  password:
   host: localhost
 
 # Warning: The database defined as "test" will be erased and

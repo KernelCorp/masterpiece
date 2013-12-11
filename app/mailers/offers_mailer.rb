@@ -1,6 +1,6 @@
 #encoding: utf-8
 class OffersMailer < ActionMailer::Base
-  default from: 'mfc-shedevr@mail.ru',
+  default from: 'mfcshedevr@gmail.com',
             to: 'mfc-shedevr@mail.ru'
   def create(offer)
     @offer = offer
