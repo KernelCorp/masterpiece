@@ -45,6 +45,6 @@ gem 'unicorn'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
+#gem 'debugger'
 
 gem 'refinerycms-projects', :path => 'vendor/extensions'
