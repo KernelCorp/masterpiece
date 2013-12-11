@@ -6,7 +6,7 @@ server {
   listen 80;
 
   client_max_body_size 1G;
-  server_name mfc-shedevr.ru www.mfc-shedevr.ru;
+  server_name sh.kerweb.ru mfc-shedevr.ru www.mfc-shedevr.ru;
   keepalive_timeout 5;
   root /var/www/masterpiece/current/public;
       try_files $uri/index.html $uri.html $uri @myapp;
