@@ -62,7 +62,7 @@ module Masterpiece
     config.action_mailer.smtp_settings = {
         address:              'smtp.mail.ru',
         port:                 465,
-        domain:               '.mail.ru',
+        domain:               'mail.ru',
         user_name:            'mfc-shedevr@mail.ru',
         password:             'shedevrladoha ',
         authentication:       'plain',
