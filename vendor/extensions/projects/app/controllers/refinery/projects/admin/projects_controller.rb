@@ -18,7 +18,6 @@ module Refinery
           @page = Page.new newPage
           @page.save!
           @project = Project.new params[:project]
-          @project.page_id = @page.id
           @project.save!
           redirect_to '/refinery/projects'
         end
