@@ -24,6 +24,8 @@ gem 'jquery-rails', '~> 2.0.0'
 gem 'refinerycms', '~> 2.0.0'
 gem 'refinerycms-i18n', '2.0.2'
 gem 'russian'
+gem 'globalize3', '0.3.0'
+gem 'globalize', '3.0.0'
 
 group :development do
   gem 'capistrano'
