@@ -20,9 +20,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '~> 2.0.0'
-gem 'refinerycms', '~> 2.0.0'
-gem 'refinerycms-i18n', '2.0.2'
+gem 'acts_as_indexed'
+
+gem 'jquery-rails', '~> 2.3'
+gem 'refinerycms', '~> 2.1.1'
+gem 'refinerycms-i18n', '~>2.1'
 gem 'russian'
 
 group :development do
