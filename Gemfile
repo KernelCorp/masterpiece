@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '~> 3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -22,11 +22,11 @@ end
 
 gem 'acts_as_indexed'
 
-gem 'jquery-rails', '~> 2.3'
-gem 'refinerycms', '~> 2.1.1'
-gem 'refinerycms-i18n', '~>2.1'
+gem 'jquery-rails', '~> 2.0.0'
+gem 'refinerycms', '~> 2.0.0'
+gem 'refinerycms-i18n', '2.0.2'
 gem 'globalize3', '0.3.0'
-gem 'globalize', '3.0.1'
+gem 'globalize', '3.0.0'
 gem 'russian'
 
 group :development do
