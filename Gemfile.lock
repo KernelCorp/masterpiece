@@ -156,9 +156,6 @@ GEM
       will_paginate (~> 3.0.2)
     refinerycms-dashboard (2.0.10)
       refinerycms-core (= 2.0.10)
-    refinerycms-i18n (2.0.2)
-      refinerycms-core (~> 2.0.0)
-      routing-filter (>= 0.2.3)
     refinerycms-images (2.0.10)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
@@ -172,8 +169,6 @@ GEM
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.10)
-    routing-filter (0.3.1)
-      actionpack
     russian (0.6.0)
       i18n (>= 0.5.0)
     rvm-capistrano (1.5.1)
@@ -225,7 +220,6 @@ DEPENDENCIES
   nginx-config
   rails (~> 3.2.13)
   refinerycms (~> 2.0.0)
-  refinerycms-i18n (= 2.0.2)
   refinerycms-projects!
   russian
   rvm-capistrano

@@ -24,7 +24,7 @@ gem 'acts_as_indexed'
 
 gem 'jquery-rails', '~> 2.0.0'
 gem 'refinerycms', '~> 2.0.0'
-gem 'refinerycms-i18n', '2.0.2'
+#gem 'refinerycms-i18n', '2.0.2'
 gem 'globalize3', '0.3.0'
 gem 'globalize', '3.0.0'
 gem 'russian'
