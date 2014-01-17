@@ -1,5 +1,6 @@
 class AllowedNullFortPageId < ActiveRecord::Migration
   def up
+    change_column "refinery_page_translations", "refinery_page_id", :integer, null: true
     remove_index "refinery_page_translations", "refinery_page_id"
   end
 
